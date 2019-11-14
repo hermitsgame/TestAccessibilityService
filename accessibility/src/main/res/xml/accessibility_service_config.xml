@@ -1,0 +1,20 @@
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeAllMask"
+    android:accessibilityFeedbackType="feedbackSpoken"
+    android:accessibilityFlags="flagDefault"
+    android:canRetrieveWindowContent="true"
+    android:description="@string/accessibility_service_description"
+    android:notificationTimeout="100" />
+
+
+    <!--
+        accessibilityEventTypes：设置监听的事件种类，用|隔开，监听所有可以用typeAllMask；
+        accessibilityFeedbackType：服务提供的反馈类型，feedbackGeneric通用反馈；
+        accessibilityFlags：辅助功能附加的标志，flagDefault默认的配置
+        canRetrieveWindowContent：辅助功能服务是否能够取回活动窗口内容的属性
+        notificationTimeout：响应时间
+        packageNames：监听的应用包名，不填，默认监听所有应用的事件
+        settingsActivity：允许用户修改辅助功能的activity类名
+
+
+        -->
