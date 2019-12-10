@@ -4,8 +4,6 @@ import android.app.Application;
 
 import cn.com.startai.accessibility.StartAIAccessibilityService;
 import cn.com.startai.common.CommonSDKInterface;
-import cn.com.startai.common.utils.CShellUtils;
-import cn.com.startai.common.utils.CThreadPoolUtils;
 import cn.com.startai.common.utils.TAndL;
 
 /**
@@ -17,7 +15,7 @@ public class MyApp extends Application {
     public void onCreate() {
         super.onCreate();
         CommonSDKInterface.getInstance().init(this);
-        TAndL.L("MyApp.onCreate");
+        TAndL.L("MyApp.onCreate()");
 
 
         StartAIAccessibilityService.initAccessbilityService(this);
